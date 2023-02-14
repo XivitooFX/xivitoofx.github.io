@@ -9,7 +9,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<style>
+    .progress {
+        height: 35px;
+        width: 100%;
+        border: 1px solid #428bca;
+        border-radius: 5px;
+        background-color: #e6f3fa;
+        margin-bottom: 15px;
+    }
+
+    .progress-bar {
+        height: 100%;
+        background: #428bca;
+        display: flex;
+        align-items: center;
+        transition: width 0.25s;
+        border-radius: 5px;
+    }
+
+    .progress-bar-text {
+        margin-left: 10px;
+        font-weight: bold;
+        color: #cce7f5;
+    }
+</style>
+
 <body>
+
 
     <header id="main-header">
 
@@ -34,7 +61,7 @@
 
         <article>
             <header>
-                <h1 style="color: black;">HOTELES ZAIDIN</h1>
+                <h1 style="color: black;">RESEÑAS</h1>
             </header>
             <div class="social">
                 <a href="#4"><img src="imagenes/apple.png" alt="apple"></a>
@@ -43,44 +70,65 @@
                 <a href="#7"><img src="imagenes/facebook.png" alt="facebook"></a>
             </div>
 
-            <img src="imagenes/abades.jpg" alt="abades">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                src="imagenes/dedo.png" alt="dedo">
 
             <div class="content">
                 <table>
 
                     <tr>
 
-                        <td>Limpieza</td>
-
-                        <td>9,9</td>
-
-                    </tr>
-
-                    <tr>
-
-                        <td>Ubicacion</td>
-
-                        <td>9,7</td>
+                        <div class="progress">
+                            <div class="progress-bar" style="width:99%;">
+                                <span class="progress-bar-text">SERVICIOS -- 99%</span>
+                            </div>
+                        </div>
 
                     </tr>
 
                     <tr>
 
-                        <td>Personal</td>
-
-                        <td>10</td>
+                        <div class="progress">
+                            <div class="progress-bar" style="width:100%;">
+                                <span class="progress-bar-text">UBICACIÓN -- 100%</span>
+                            </div>
+                        </div>
 
                     </tr>
 
                     <tr>
 
-                        <td>Precio</td>
+                        <div class="progress">
+                            <div class="progress-bar" style="width:82%;">
+                                <span class="progress-bar-text">PRECIO -- 82%</span>
+                            </div>
+                        </div>
 
-                        <td>8,8</td>
+                    </tr>
+
+                    <tr>
+
+                        <div class="progress">
+                            <div class="progress-bar" style="width:96%;">
+                                <span class="progress-bar-text">PROFESIONALIDAD -- 96%</span>
+                            </div>
+                        </div>
 
                     </tr>
 
                 </table>
+
+                <TABLE BORDER=5 CELLPADDING=10 CELLSPACING=10>
+                    <TR>
+                        <TD>AÑOS</TD> <TD>2019</TD> <TD>2020</TD> <TD>2021</TD> <TD>2022</TD> <TD>2023</TD>
+                    </TR>
+                    <TR>
+                        <TD>OCUPACION TOTAL</TD> <TD>97%</TD> <TD>75%</TD> <TD>100%</TD> <TD>98%</TD> <TD>91%</TD>
+                    </TR>
+                    <TR>
+                        <TD>MEDIA PRECIO/NOCHE</TD> <TD>72€</TD> <TD>94€</TD> <TD>64€</TD> <TD>52€</TD> <TD>60€</TD>
+                    </TR>
+                </TABLE>
             </div>
 
         </article>
