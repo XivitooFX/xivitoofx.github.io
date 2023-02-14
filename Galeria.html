@@ -10,142 +10,77 @@
 </head>
 
 <style>
+    #main-header {
+        background: #333;
+        color: white;
+        height: 80px;
 
-#main-header {
-    background: #333;
-    color: white;
-    height: 80px;
+        width: 100%;
+        left: 0;
+        top: 0;
+        position: fixed;
+    }
 
-    width: 100%;
-    left: 0;
-    top: 0;
-    position: fixed;
-}
-
-#main-header a {
-    color: white;
-}
-
-
-#logo-header {
-    float: left;
-    padding: 15px 0 0 20px;
-    text-decoration: none;
-}
-
-#logo-header:hover {
-    color: #0b76a6;
-}
-
-#logo-header .site-name {
-    display: block;
-    font-weight: 700;
-    font-size: 1.2em;
-}
-
-#logo-header .site-desc {
-    display: block;
-    font-weight: 300;
-    font-size: 0.8em;
-    color: #999;
-}
+    #main-header a {
+        color: white;
+    }
 
 
-nav {
-    float: right;
-}
+    #logo-header {
+        float: left;
+        padding: 15px 0 0 20px;
+        text-decoration: none;
+    }
 
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    padding-right: 20px;
-}
+    #logo-header:hover {
+        color: #0b76a6;
+    }
 
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
-}
+    #logo-header .site-name {
+        display: block;
+        font-weight: 700;
+        font-size: 1.2em;
+    }
 
-nav ul li a {
-    display: block;
-    padding: 0 10px;
-    text-decoration: none;
-}
+    #logo-header .site-desc {
+        display: block;
+        font-weight: 300;
+        font-size: 0.8em;
+        color: #999;
+    }
 
-nav ul li a:hover {
-    background: #0b76a6;
-}
+
+    nav {
+        float: right;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        padding-right: 20px;
+    }
+
+    nav ul li {
+        display: inline-block;
+        line-height: 80px;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 0 10px;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        background: #0b76a6;
+    }
+
     img {
         width: 100%;
         height: auto;
     }
 
-    h2 {
-        margin-bottom: .5em;
-    }
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        grid-gap: 1em;
-    }
-
-    .location-listing {
-        position: relative;
-    }
-
-    .location-image {
-        line-height: 0;
-        overflow: hidden;
-    }
-
-    .location-image img {
-        filter: blur(0px);
-        transition: filter 0.3s ease-in;
-        transform: scale(1.1);
-    }
-
-    .location-title {
-        font-size: 1.5em;
-        font-weight: bold;
-        text-decoration: none;
-        z-index: 1;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        transition: opacity .5s;
-        background: rgba(90, 0, 10, 0.4);
-        color: white;
-
-        /* position the text in t’ middle*/
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .location-listing:hover .location-title {
-        opacity: 1;
-    }
-
-    .location-listing:hover .location-image img {
-        filter: blur(2px);
-    }
-
-
-    /* for touch screen devices */
-    @media (hover: none) {
-        .location-title {
-            opacity: 1;
-        }
-
-        .location-image img {
-            filter: blur(2px);
-        }
-    }
 </style>
 
 <body>
@@ -230,9 +165,8 @@ nav ul li a:hover {
                             <img width="150" height="85" src="imagenes/foto4.jpg" alt="foto4"> </a>
 
                     </div>
-
                 </article>
-                
+
             </div>
 
         </article>

@@ -134,8 +134,6 @@ nav ul li a:hover {
     right: 0;
 }
 
-
-
 .social {
 
     top: 50%;
@@ -159,8 +157,6 @@ h4 {
     color: #000000;
     line-height: 1.5;
 }
-
-/* ///// inputs /////*/
 
 input:focus~label,
 textarea:focus~label,
@@ -274,4 +270,72 @@ input[type=checkbox]+label {
 input[type=checkbox]:checked+label {
     color: #f00;
     font-style: normal;
+}
+
+h2 {
+    margin-bottom: .5em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+    overflow: hidden;
+}
+
+.location-listing {
+    position: relative;
+    overflow: hidden;
+}
+
+.location-image {
+    line-height: 0;
+    overflow: hidden;
+}
+
+.location-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+.location-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgba(0, 17, 90, 0.4);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.location-listing:hover .location-title {
+    opacity: 1;
+    overflow: hidden;
+}
+
+.location-listing:hover .location-image img {
+    filter: blur(2px);
+    overflow: hidden;
+}
+
+@media (hover: none) {
+    .location-title {
+        opacity: 1;
+    }
+
+    .location-image img {
+        filter: blur(2px);
+    }
 }
