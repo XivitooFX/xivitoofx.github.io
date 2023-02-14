@@ -297,7 +297,7 @@ h2 {
     filter: blur(0px);
     transition: filter 0.3s ease-in;
     transform: scale(1.1);
-    overflow: hidden;
+
 }
 
 .location-title {
@@ -312,22 +312,21 @@ h2 {
     left: 0;
     opacity: 0;
     transition: opacity .5s;
-    background: rgba(0, 17, 90, 0.4);
+    background: rgba(48, 48, 48, 0.4);
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+ 
 }
 
 .location-listing:hover .location-title {
     opacity: 1;
-    overflow: hidden;
+
 }
 
 .location-listing:hover .location-image img {
     filter: blur(2px);
-    overflow: hidden;
 }
 
 @media (hover: none) {
